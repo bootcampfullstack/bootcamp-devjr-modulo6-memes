@@ -1,9 +1,9 @@
 //fetch("https://api.imgflip.com/get_memes")
 //.then((response) => {console.log(response.json())});
 
-$.getJSON("https://api.imgflip.com/get_memes", (x) => 
+$.getJSON("https://api.imgflip.com/get_memes", (response) => 
     {
-        for(var m of x.data.memes){
+        for(var m of response.data.memes){
             document.getElementById("memes").innerHTML += 
             
             `
